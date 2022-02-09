@@ -13,7 +13,7 @@ function Links() {
       {navLinks.map(({ url, text }) => (
         <NavLink
           to={url}
-          className="text-blue-700 border-b-2 dark:text-blue-300 border-blue-700 pb-2 mr-8"
+          className="text-blue-700 hover:text-blue-900 hover:underline dark:text-blue-300 pb-2 mr-8"
         >
           {text}
         </NavLink>
