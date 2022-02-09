@@ -6,7 +6,7 @@ const ResultsContext = createContext();
 export const ResultContextProvider = ({ children }) => {
   const [results, setResults] = useState([]);
   const [loading, setloading] = useState(false);
-  const [searchText, setSearchText] = useState("Javascript");
+  const [searchText, setSearchText] = useState("Ratan Tata");
 
   const getResults = async (text) => {
     setloading(true);
