@@ -65,12 +65,14 @@ function Results() {
         <div className="flex flex-wrap items-center justify-center">
           {results?.results?.map((video, idx) => (
             <div key={idx} className="p-2">
-              <ReactPlayer
-                url={video.additional_links?.[0].href}
-                controls
-                width="335px"
-                height="200px"
-              />
+              {video.additional_links?.[0].href && (
+                <ReactPlayer
+                  url={video.additional_links?.[0].href}
+                  controls
+                  width="335px"
+                  height="200px"
+                />
+              )}
             </div>
           ))}
         </div>
