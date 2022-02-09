@@ -1,4 +1,3 @@
-import { type } from "@testing-library/user-event/dist/type";
 import { createContext, useState } from "react";
 
 const baseURL = "https://google-search3.p.rapidapi.com/api/v1";
@@ -24,15 +23,7 @@ export const ResultContextProvider = ({ children }) => {
       });
 
       const data = await response.json();
-
-      if (type.includes("/news")) {
-        setResults(data.entries);
-      } else if (type.includes("/images")) {
-        setResults(data.image_results);
-      } else {
-        setResults(data.results);
-      }
-
+      setResults(data);
       setloading(false);
     } catch (error) {
       console.log(error);
