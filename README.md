@@ -1,4 +1,4 @@
-# Search Engine App using RapidApi.
+# Search Engine App built with React and RapidApi.
 
 ## To Install
 
